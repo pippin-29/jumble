@@ -6,7 +6,7 @@
 /*   By: dhadding <operas.referee.0e@icloud.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 09:27:40 by dhadding          #+#    #+#             */
-/*   Updated: 2023/08/02 10:03:36 by dhadding         ###   ########.fr       */
+/*   Updated: 2023/08/03 10:42:49 by dhadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 typedef unsigned int u32;
 
-u32		checklen(char **argv);
+u32		checkargs(char **argv);
 char	**copyargs(char **argv, u32 argcount);
 void	print1dchar(char **array);
 char	**jumble(char **array);

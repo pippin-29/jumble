@@ -6,40 +6,32 @@
 /*   By: dhadding <operas.referee.0e@icloud.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 09:06:10 by dhadding          #+#    #+#             */
-/*   Updated: 2023/08/03 10:27:34 by dhadding         ###   ########.fr       */
+/*   Updated: 2023/08/03 10:40:55 by dhadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "jumble.h"
 
-void checkargs(char **argv)
+u32 checkargs(char **argv)
 {
 	u32 i = 0;
 	u32 j = 0;
-
-	while (argv[i])
-	{
-		while (argv[i][j])
-		{
-			if (argv[i][j] == ':')
-			{
-				printf("I do not accept ':'\n");
-				exit (1);
-			}
-			i++;
-		}
-		j++;
-	}
-}
-
-u32 checklen(char **argv)
-{
-	u32 i = 0;
 	u32 len = strlen(argv[0]);
+
 	while (argv[i])
 	{
 		if (strlen(argv[i]) != len)
 			return (0);
+		j = 0;
+		while (argv[i][j])
+		{
+			if (argv[i][j] == ':')
+			{
+				printf("I do not accept :\n");
+				exit (1);
+			}
+			j++;
+		}
 		i++;
 	}
 	return (len);
