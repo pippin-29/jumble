@@ -3,7 +3,7 @@
 Takes a single argument string or multiple argument strings (checks if length
 is uniform for whole key).
 
-Sorts each argument lexigraphically.
+Sorts each argument in lexographic order.
 
 Creates index (or keymap), for use with dejumble.
 
