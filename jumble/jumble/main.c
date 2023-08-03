@@ -6,7 +6,7 @@
 /*   By: dhadding <operas.referee.0e@icloud.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/01 09:24:01 by dhadding          #+#    #+#             */
-/*   Updated: 2023/08/02 10:08:15 by dhadding         ###   ########.fr       */
+/*   Updated: 2023/08/03 10:24:27 by dhadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 		printf("Arguments must be all the same length.\n");
 		return (1);
 	} else {
-
+		checkargs(&argv[1]);
 		u32 argcount = (argc - 1);
 		u32 length = checklen(&argv[1]);
 		if (length == 0)
