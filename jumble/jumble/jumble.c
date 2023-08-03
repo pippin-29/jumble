@@ -6,7 +6,7 @@
 /*   By: dhadding <operas.referee.0e@icloud.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/02 09:06:10 by dhadding          #+#    #+#             */
-/*   Updated: 2023/08/02 10:04:17 by dhadding         ###   ########.fr       */
+/*   Updated: 2023/08/02 10:34:40 by dhadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,7 @@ void print2dchar(char **array)
 
 	while (array[i])
 	{
-		printf("%s\n", array[i]);
+		printf("%s ", array[i]);
 		i++;
 	}
 }
@@ -138,7 +138,7 @@ void print2dint(u32 **array, u32 length, u32 argcount)
 			printf("%d.", array[i][j]);
 			j++;
 		}
-		printf("\n");
+		printf(" ");
 		i++;
 	}
 }
