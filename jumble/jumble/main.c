@@ -49,6 +49,7 @@ int main(int argc, char **argv)
 		print2dint(keymap, length, argcount);
 		printf("\n");
 
+		free(original); // Updated For Memory Leak Fix.
 		free(newkey);
 		free(copy);
 		free(keymap);
